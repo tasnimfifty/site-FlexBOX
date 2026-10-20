@@ -1,0 +1,48 @@
+.conteneur-galerie{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap  ;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 50px;
+
+    
+}
+
+.carte{
+    width: 300px;
+    flex: 20 4 40px;
+    margin-top: 70px ;
+    
+}
+/* img{
+    width: 250px;
+} */
+
+.carte-vedette{
+    flex-grow: 2;
+    order: -1;
+}
+
+
+
+
+.carte:last-child{
+    align-self: flex-end;   
+}
+
+@media screen and (max-width:768px){
+    .conteneur-galerie{
+        flex-direction: column;
+        align-items: center;
+    }
+    .carte{
+        width: 100%;
+    }
+}
+
+
+  
+
+
+
